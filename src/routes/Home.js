@@ -2,7 +2,8 @@ import { useState, useEffect } from "react"
 import Movie from "../components/Movie"
 
 const Home = () => {
-    const url = "https://yts.mx/api/v2/list_movies.json?minimum_rating=9=8.8&sort_by=year";
+    //const url = "https://yts.mx/api/v2/list_movies.json?minimum_rating=9=8.8&sort_by=year";
+    const url = "http://localhost:3000/data.json";
     const detailUrl = "";
     const [loading, setLoading] = useState(true);
     const [movies, setMovies] = useState([]);
